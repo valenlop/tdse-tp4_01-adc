@@ -1,0 +1,18 @@
+Configuración del ADC1 (tdse-tp4_01-adc)
+
+1. Modo General:
+   - Modo de operación: Independiente (Independent mode)
+
+2. Parámetros de Conversión (ADC_Settings):
+   - Alineación de datos: Alineación a la derecha (Right alignment)
+   - Modo Scan: Deshabilitado (Scan Conversion Mode: Disabled)
+   - Modo de conversión continua: Deshabilitado (Continuous Conversion Mode: Disabled)
+   - Modo discontinuo: Deshabilitado (Discontinuous Conversion Mode: Disabled)
+
+3. Conversiones Regulares (ADC_Regular_ConversionMode):
+   - Conversiones regulares habilitadas: Habilitado (Enable)
+   - Número de conversiones: 1
+   - Fuente de disparo (External Trigger): Disparo por software (Regular Conversion launched by software)
+   - Canal: Rank 1 -> Canal 0 (PA0)
+
+Conclusión: El ADC está configurado en modo discreto/simple por disparo de software. Cada lectura requiere iniciar explícitamente la conversión desde el código.
